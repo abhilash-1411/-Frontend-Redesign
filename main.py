@@ -6,7 +6,7 @@ bootstrap = Bootstrap(app)
 
 @app.route('/')
 def home():
-    return "Welcome to the Flask API!"
+    return "Welcome to the Flask!"
 
 @app.route('/header')
 def header():
@@ -15,6 +15,11 @@ def header():
 @app.route('/selectworkspace')
 def selectworkspace():
     return render_template('selectworkspace.html')
+@app.route('/footer')
+def footer():
+    return render_template('footer.html')
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

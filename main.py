@@ -12,7 +12,9 @@ def home():
 def header():
     return render_template('header.html')
 
-
+@app.route('/selectworkspace')
+def selectworkspace():
+    return render_template('selectworkspace.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

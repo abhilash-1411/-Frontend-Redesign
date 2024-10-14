@@ -1,10 +1,14 @@
-from flask import Flask
+from flask import Flask,render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return "Welcome to the Flask API!"
+
+@app.route('/header')
+def header():
+    return render_template('header.html')
 
 
 

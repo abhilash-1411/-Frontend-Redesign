@@ -6,11 +6,15 @@ bootstrap = Bootstrap(app)
 
 @app.route('/')
 def home():
-    return "Welcome to the Flask API!"
+    return "Welcome to the Flask!"
 
 @app.route('/header')
 def header():
     return render_template('header.html')
+
+@app.route('/footer')
+def footer():
+    return render_template('footer.html')
 
 
 

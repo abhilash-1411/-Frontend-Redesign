@@ -30,6 +30,9 @@ def createWorkspaceModal():
 
 
 
+@app.route('/toolbar')
+def createWorkspaceProduct():
+    return render_template('toolbar.html')
 
 
 if __name__ == '__main__':

@@ -15,9 +15,20 @@ def header():
 @app.route('/selectworkspace')
 def selectworkspace():
     return render_template('selectworkspace.html')
+
 @app.route('/footer')
 def footer():
     return render_template('footer.html')
+
+@app.route('/base')
+def base():
+    return render_template('base.html')
+
+@app.route('/createWorkspaceModal')
+def createWorkspaceModal():
+    return render_template('createWorkspaceModal.html')
+
+
 
 
 

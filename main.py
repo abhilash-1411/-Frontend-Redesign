@@ -15,10 +15,14 @@ def header():
 @app.route('/selectworkspace')
 def selectworkspace():
     return render_template('selectworkspace.html')
+
 @app.route('/footer')
 def footer():
     return render_template('footer.html')
 
+@app.route('/toolbar')
+def createWorkspaceProduct():
+    return render_template('toolbar.html')
 
 
 if __name__ == '__main__':

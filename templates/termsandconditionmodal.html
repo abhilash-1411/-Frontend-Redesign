@@ -1,114 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SCS End User License Agreement</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        /* Modal styles */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; 
-            z-index: 1; 
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgba(0,0,0,0.4); 
-            padding-top: 60px;
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto; 
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%; 
-            max-height: 80%;
-            overflow-y: auto;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
-    <script>
-        function openModal() {
-            document.getElementById("eulaModal").style.display = "block";
-        }
-        function closeModal() {
-            document.getElementById("eulaModal").style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == document.getElementById("eulaModal")) {
-                closeModal();
-            }
-        }
-    </script>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Trigger Button in Footer -->
+    <footer>
+      <button
+        type="button"
+        class="btn btn-link"
+        data-toggle="modal"
+        data-target="#eulaModal"
+      >
+        View Terms and Conditions
+      </button>
+    </footer>
 
-<h1>SCS END USER LICENSE AGREEMENT</h1>
+    <!-- Modal for EULA -->
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="eulaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="eulaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="eulaModalLabel">
+              SCS END USER LICENSE AGREEMENT
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              This End User License Agreement (this “EULA”) is entered into by
+              and between YOU ("You" or the "Authorized User") AND SCIENTIFIC
+              CERTIFICATION SYSTEMS, INC. D/B/A SCS GLOBAL SERVICES, A
+              CALIFORNIA BENEFIT CORPORATION ("We" or "Company"). BEFORE
+              DOWNLOADING, ACCESSING, OR USING ANY PART OF THE E-COMPASS SUITE,
+              YOU SHOULD READ CAREFULLY THE FOLLOWING TERMS AND CONDITIONS
+              CONTAINED IN THIS EULA AS THEY GOVERN YOUR ACCESS TO AND USE OF
+              E-COMPASS SUITE (collectively, the or this "Tool"). Company IS
+              WILLING TO LICENSE AND ALLOW THE USE OF THIS TOOL ONLY ON THE
+              CONDITION THAT YOU ACCEPT AND AGREE TO ALL OF THE TERMS AND
+              CONDITIONS CONTAINED IN THIS EULA. IF YOU DO NOT AGREE WITH THIS
+              EULA, THEN YOU ARE NOT GRANTED PERMISSION TO ACCESS OR OTHERWISE
+              USE THE TOOL.
+            </p>
 
-<!-- Trigger Button -->
-<footer>
-    <button onclick="openModal()">View EULA</button>
-</footer>
+            <h3>Terms and Conditions</h3>
 
-<!-- Modal for EULA -->
-<div id="eulaModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h1>SCS END USER LICENSE AGREEMENT</h1>
-        <p>
-            This End User License Agreement (this “EULA”) is entered into by and between YOU ("You" or the "Authorized User") AND SCIENTIFIC CERTIFICATION SYSTEMS, INC. D/B/A SCS GLOBAL SERVICES, A CALIFORNIA BENEFIT CORPORATION ("We" or "Company"). BEFORE DOWNLOADING, ACCESSING, OR USING ANY PART OF THE E-COMPASS SUITE, YOU SHOULD READ CAREFULLY THE FOLLOWING TERMS AND CONDITIONS CONTAINED IN THIS EULA AS THEY GOVERN YOUR ACCESS TO AND USE OF E-COMPASS SUITE (collectively, the or this "Tool"). Company IS WILLING TO LICENSE AND ALLOW THE USE OF THIS TOOL ONLY ON THE CONDITION THAT YOU ACCEPT AND AGREE TO ALL OF THE TERMS AND CONDITIONS CONTAINED IN THIS EULA. IF YOU DO NOT AGREE WITH THIS EULA, THEN YOU ARE NOT GRANTED PERMISSION TO ACCESS OR OTHERWISE USE THE TOOL.
-        </p>
+            <ul>
+              <li>
+                LICENSE GRANT .The Tool is provided by Company, and this EULA
+                provides to you a personal, revocable, limited, non-exclusive,
+                royalty-free, non-transferable license to use the Tool
+                conditioned on your continued compliance with the terms and
+                conditions of this EULA. This EULA permits you to use and access
+                the Tool for personal or business purposes only and only through
+                the web application, unless such other method is approved by
+                Company in writing. This EULA does not permit any other person
+                or assignee to use the Tool. You may also load information from
+                the Tool into your laptop's, workstation's, or computer's
+                temporary memory (RAM) and print and download materials and
+                information from the Tool solely for your personal or business
+                use, provided that all hard copies contain all copyright and
+                other applicable notices contained in such materials and
+                information. If you are using the Tool on behalf of a company or
+                other form of business entity, please note that such a company
+                or entity may have a separate agreement with Company regarding
+                access and usage privileges for the Tool. Nevertheless, your
+                personal use of the Tool will be subject to the obligations and
+                restrictions as set forth in this EULA
+              </li>
 
-        <h2>Terms and Conditions</h2>
+              <li>
+                RESTRICTIONS .The foregoing license is limited. You may not use,
+                copy, store, reproduce, transmit, distribute, display, rent,
+                lease, sell, modify, alter, license, sublicense, or commercially
+                exploit any data provided by Company through the Tool in any
+                manner not expressly permitted by this EULA. In addition, you
+                may not modify, translate, decompile, create any derivative
+                work(s) of, copy, distribute, disassemble, broadcast, transmit,
+                publish, remove or alter any proprietary notices or labels,
+                license, sublicense, transfer, sell, mirror, frame, exploit,
+                rent, lease, private label, grant a security interest in, or
+                otherwise use in any manner not expressly permitted herein the
+                Tool.
+              </li>
 
-        <h3>LICENSE GRANT</h3>
-        <p>
-            The Tool is provided by Company, and this EULA provides to you a personal, revocable, limited, non-exclusive, royalty-free, non-transferable license to use the Tool conditioned on your continued compliance with the terms and conditions of this EULA. This EULA permits you to use and access the Tool for personal or business purposes only and only through the web application, unless such other method is approved by Company in writing...
-        </p>
+              <li>
+                USER OBLIGATIONS .By downloading, accessing, or using the Tool
+                in order to view our information and materials or submit
+                information of any kind, you represent that you are at least the
+                legal age of majority and will, at all times, provide true,
+                accurate, current, and complete information when submitting
+                information or materials on the Tool, including, without
+                limitation, when you provide information via a Tool registration
+                or submission form. In addition, you agree to abide by all
+                applicable local, state, national, and international laws and
+                regulations with respect to your use of the Tool. This EULA is
+                also expressly made subject to any applicable export laws,
+                orders, restrictions, or regulations.
+              </li>
 
-        <!-- Continue with the rest of your EULA content... -->
+              <li>
+                PROPRIETARY RIGHTS .This EULA provides only a limited license to
+                access and use the Tool. Accordingly, you expressly acknowledge
+                and agree that Company transfers no ownership or intellectual
+                property interest or title in and to the Tool to you or anyone
+                else. All text, graphics, user interfaces, visual interfaces,
+                photographs, sounds, artwork, computer code (including html
+                code), programs, software, products, information, and
+                documentation as well as the design, structure, selection,
+                coordination, expression, "look and feel," and arrangement of
+                any content contained on or available through the Tool, unless
+                otherwise indicated, are owned, controlled, and licensed by
+                Company and its successors and assigns and are protected by law
+                including, but not limited to, United States copyright, trade
+                secret, patent, and trademark law, as well as other state,
+                national, and international laws and regulations. Except as
+                expressly provided herein, Company does not grant any express or
+                implied right to you or any other person under any intellectual
+                or proprietary rights. Accordingly, your unauthorized use of the
+                Tool may violate intellectual property or other proprietary
+                rights laws as well as other laws, regulations, and statutes.
+                This Tool is Copyright © 2024 Scientific Certification Systems,
+                Inc. d/b/a SCS Global Services. All rights reserved. Tool,
+                Company, the Company logo, and all other names, logos, and icons
+                identifying Company and its programs, products, and services are
+                proprietary trademarks of Company, and any use of such marks,
+                including, without limitation, as domain names, without the
+                express written permission of Company is strictly prohibited.
+                Other service and entity names mentioned herein may be the
+                trademarks and/or service marks of their respective owners.
+              </li>
 
-        <h3>LIMITATION OF LIABILITY</h3>
-        <p>
-            You expressly absolve and release Company from any claim of harm resulting from a cause beyond Company's control, including, but not limited to, failure of electronic or mechanical equipment or communication lines, telephone or other connection problems, computer viruses, unauthorized access...
-        </p>
+              <li>
+                FEEDBACK AND SUBMISSIONS .Company welcomes your feedback and
+                suggestions about Company's products or services or the Tool. By
+                transmitting any suggestions, information, material, or other
+                content (collectively, "feedback") to Company, you represent and
+                warrant that such feedback does not infringe or violate the
+                intellectual property or proprietary rights of any third party
+                (including, without limitation, patents, copyrights, or
+                trademark rights) and that you have all rights necessary to
+                convey to Company and enable Company to use such feedback. In
+                addition, any feedback received through the Tool will be deemed
+                to include a royalty-free, perpetual, irrevocable, transferable,
+                non-exclusive right and license for Company to adopt, publish,
+                reproduce, disseminate, transmit, distribute, copy, use, create
+                derivative works, and display (in whole or in part) worldwide,
+                or act on such feedback without additional approval or
+                consideration, in any form, media, or technology now known or
+                later developed for the full term of any rights that may exist
+                in such content, and you hereby waive any claim to the contrary.
+              </li>
 
-        <h3>TERM AND TERMINATION</h3>
-        <p>
-            This EULA and your right to use the Tool will take effect at the moment you click "ACCEPT" or you install, access, or use the Tool and is effective until terminated as set forth below...
-        </p>
+              <li>
+                DISCLAIMER .WHILE Company ENDEAVORS TO PROVIDE RELIABLE
+                INFORMATION, SERVICES, PROGRAMS, SOFTWARE, AND MATERIALS, THE
+                TOOL IS PROVIDED ON AN "AS-IS" AND "AS AVAILABLE" BASIS AND MAY
+                INCLUDE ERRORS, OMISSIONS, OR OTHER INACCURACIES. THE PARTIES
+                RECOGNIZE THAT THIS TOOL MAY BE USED IN RELATION TO
+                ENVIRONMENTAL PRODUCT DECLARATIONS AND PRODUCT CARBON FOOTPRINTS
+                WHICH RELY ON THE ACCURATENESS AND COMPLETENESS OF INFORMATION
+                PROVIDED BY THIRD-PARTIES. THE OWNER OF SUCH DECLARATION OR ANY
+                FOOTPRINT IS SOLELY LIABLE FOR THE UNDERLYING INFORMATION AND
+                EVIDENCE AND COMPANY IS NOT LIABLE AND SHALL NOT BE HELD LIABLE
+                WITH RESPECT TO MANUFACTURER INFORMATION, LIFE CYCLE ASSESSMENT
+                DATA, OR EVIDENCE SUPPLIED OR MADE AVAILABLE TO COMPANY OR YOU.
+                Company EXPRESSLY DISCLAIMS AND YOU WAIVE ANY WARRANTY OR
+                REPRESENTATION AS TO THE ACCURACY OR COMPLETENESS OF ANY
+                INFORMATION PROVIDED IN, WITH, BY, OR OTHERWISE PROVIDED OR
+                PRODUCED IN RELATION TO THE TOOL, INCLUDING WITHOUT LIMITATION
+                ANY SUBSEQUENT ENVIRONMENTAL PRODUCT DECLARATIONS OR PRODUCT
+                CARBON FOOTPRINTS. YOU ASSUME THE SOLE RISK OF MAKING USE OF THE
+                Tool. Company MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE
+                RESULTS THAT CAN BE ACHIEVED FROM OR THE SUITABILITY,
+                COMPLETENESS, TIMELINESS, RELIABILITY, LEGALITY, OR ACCURACY OF
+                THE Tool FOR ANY PURPOSE, AND EXPRESSLY DISCLAIMS ALL
+                WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION,
+                ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                PURPOSE, OR NON-INFRINGEMENT OR ANY OTHER IMPLIED WARRANTY UNDER
+                THE UNIFORM COMPUTER INFORMATION TRANSACTIONS ACT AS ENACTED BY
+                ANY STATE. Company ALSO MAKES NO REPRESENTATION OR WARRANTY THAT
+                THE Tool WILL OPERATE ERROR FREE OR IN AN UNINTERRUPTED FASHION
+                OR THAT ANY DOWNLOADABLE FILES OR INFORMATION WILL BE FREE OF
+                VIRUSES OR CONTAMINATION OR DESTRUCTIVE FEATURES.
+              </li>
 
-        <h3>MISCELLANEOUS</h3>
-        <p>
-            You acknowledge that any breach, threatened or actual, of this EULA will cause irreparable injury to Company, such injury would not be quantifiable in monetary damages...
-        </p>
+              <li>
+                LIMITATION OF LIABILITY . You expressly absolve and release
+                Company from any claim of harm resulting from a cause beyond
+                Company's control, including, but not limited to, failure of
+                electronic or mechanical equipment or communication lines,
+                telephone or other connection problems, computer viruses,
+                unauthorized access, theft, operator errors, severe weather,
+                earthquakes, or natural disasters, strikes, or other labor
+                problems, wars, or governmental restrictions. MOREOVER, IN NO
+                EVENT SHALL Company BE LIABLE FOR ANY INDIRECT, PUNITIVE,
+                INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR
+                IN ANY WAY CONNECTED WITH THE USE OF THE TOOL, WITH THE DELAY OR
+                INABILITY TO USE THE TOOL, OR FOR ANY INFORMATION, SERVICES,
+                PROGRAMS, PRODUCTS, AND MATERIALS AVAILABLE THROUGH THE TOOL,
+                WHETHER BASED IN CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE,
+                EVEN IF Company HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+                DAMAGES. BECAUSE SOME STATES/JURISDICTIONS DO NOT ALLOW THE
+                EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR
+                INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY.
+                NOTWITHSTANDING THE FOREGOING, TOTAL LIABILITY OF Company FOR
+                ANY REASON WHATSOEVER RELATED TO USE OF THE TOOL SHALL NOT
+                EXCEED THE TOTAL AMOUNT PAID BY YOU TO Company IN CONNECTION
+                WITH THE SUBJECT MATTER OF THE PARTICULAR DISPUTE DURING THE
+                PRIOR THREE MONTHS.
+              </li>
 
+              <li>
+                INDEMNITY .You agree to defend, indemnify, and hold harmless
+                Company, its subsidiaries, and affiliates and all of their
+                respective employees, agents, directors, officers, shareholders,
+                attorneys, successors, and assigns from and against any and all
+                claims, proceedings, damages, injuries, liabilities, losses,
+                costs, and expenses (including reasonable attorneys’ fees and
+                litigation expenses) relating to or arising from any breach by
+                you of this EULA.
+              </li>
+
+              <li>
+                GOVERNING LAW .This EULA has been made in and will be construed
+                and enforced solely in accordance with the laws of the United
+                States of America and the State of California, U.S.A. as applied
+                to agreements entered into and completely performed in the State
+                of California. You and Company each agree to submit to exclusive
+                subject matter jurisdiction, personal jurisdiction, and venue of
+                the courts in the State of California for any disputes between
+                us under or arising out of this EULA. You also agree to waive
+                any right to a jury trial in connection with any action or
+                litigation in any way arising out of or related to this EULA and
+                acknowledge that either party may seek attorney's fees in any
+                proceeding. Any claim you might have against Company must be
+                brought within one (1) year after the cause of action arises, or
+                such claim or cause of action is barred. You also acknowledge
+                and agree that any applicable state law implementation of the
+                Uniform Computer Information Transactions Act (including any
+                available remedies or laws) shall not apply to this EULA and is
+                hereby disclaimed. Company makes no representation that the Tool
+                is appropriate or available for use in every location and access
+                to the Tool from states, territories, or nations where any
+                aspect of the Tool is illegal is prohibited. You access the Tool
+                on your own volition and are responsible for compliance with all
+                applicable local laws with respect to your access and use of the
+                Tool. A printed version of this EULA and of any related notice
+                given in electronic form shall be admissible in judicial or
+                administrative proceedings based upon or relating to this EULA
+                to the same extent and subject to the same conditions as other
+                business documents and records originally generated and
+                maintained in printed form. Please contact Company if you wish
+                to receive a printed copy of this EULA.
+              </li>
+
+              <li>
+                TERM AND TERMINATION .This EULA and your right to use the Tool
+                will take effect at the moment you click "ACCEPT" or you
+                install, access, or use the Tool and is effective until
+                terminated as set forth below. This EULA will terminate
+                automatically if you click "REJECT". In addition, Company
+                reserves the right at any time and on reasonable grounds, which
+                shall include, without limitation, any reasonable belief of
+                fraudulent or unlawful activity or actions or omissions that
+                violate any term or condition of this EULA, to deny your access
+                to the Tool or to any portion thereof in order to protect its
+                name and goodwill, its business, and/or other Authorized Users,
+                and this EULA will also terminate automatically if you fail to
+                comply with this EULA or cease to pay for the Tool, subject to
+                the survival rights of certain provisions identified below.
+                Termination will be effective without notice. You may also
+                terminate this EULA at any time by ceasing to use the Tool, but
+                all applicable provisions of this EULA will survive termination,
+                as identified below. Upon termination, you must destroy all
+                copies of any aspect of the Tool in your possession. In addition
+                to the miscellaneous section below, the provisions concerning
+                Company's proprietary rights, feedback, indemnity, disclaimers
+                of warranty, limitation of liability, and governing law will
+                survive the termination of this EULA for any reason.
+              </li>
+
+              <li>
+                MISCELLANEOUS .You acknowledge that any breach, threatened or
+                actual, of this EULA will cause irreparable injury to Company,
+                such injury would not be quantifiable in monetary damages, and
+                Company would not have an adequate remedy at law. You therefore
+                agree that Company shall be entitled, in addition to other
+                available remedies, to seek and be awarded an injunction or
+                other appropriate equitable relief from a court of competent
+                jurisdiction restraining any breach, threatened or actual, of
+                your obligations under any provision of this EULA. Accordingly,
+                you hereby waive any requirement that Company post any bond or
+                other security in the event any injunctive or equitable relief
+                is sought by or awarded to Company to enforce any provision of
+                this EULA. The parties agree that this EULA is for the benefit
+                of the parties hereto as well as Company's licensors.
+                Accordingly, this EULA is personal to you, and you may not
+                assign your rights or obligations to any other person or entity
+                without Company's prior written consent. Failure by Company to
+                insist on strict performance of any of the terms and conditions
+                of this EULA will not operate as a waiver by Company of that or
+                any subsequent default or failure of performance. If any
+                provision (or part thereof) contained in this EULA is determined
+                to be void, invalid, or otherwise unenforceable by a court of
+                competent jurisdiction or on account of a conflict with an
+                applicable government regulation, such determination shall not
+                affect the remaining provisions (or parts thereof) contained
+                herein and the illegal, invalid, or unenforceable clause shall
+                be modified in compliance with applicable law in a manner that
+                most closely matches the intent of the original language. No
+                joint venture, partnership, employment, or agency relationship
+                exists between you and Company as a result of this EULA or your
+                utilization of the Tool. Headings herein are for convenience
+                only. This EULA represents the entire agreement between you and
+                Company with respect to use of the Tool, and it supersedes all
+                prior or contemporaneous communications and proposals, whether
+                electronic, oral, or written between you and Company with
+                respect to the Tool.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-</body>
+  </body>
 </html>

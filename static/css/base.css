@@ -228,13 +228,14 @@ h1 {
 
 /* footer css */
 
+ 
 .footer {
-  background-image: url('../img/Footer-bg.png');
+   
+  background: radial-gradient(100% 100% at 0% 45.1%, #FFFFFF 1.5%, rgb(163 188 129 / 20%) 24.14%, rgb(255 255 255 / 15%) 120%);
   width: 100%;
-
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 65px 0;
+  padding: 45px 0;
 
 }
 
@@ -250,7 +251,7 @@ h1 {
 .footer .footer-logo {
   font-weight: bold;
   font-size: 1.2em;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .footer p {
@@ -265,13 +266,11 @@ h1 {
 }
 
 .footer-bottom {
+  width: 85%;
+  margin: auto;
+  margin-top: 80px;
   border-top: 1px solid #444444;
-  margin-top: 20px;
   padding-top: 40px;
   font-size: 12px;
   text-align: center;
 }
-
-/* footer css */
-
-/* ---------------------------------- */

@@ -20,9 +20,21 @@ def selectworkspace():
 def footer():
     return render_template('footer.html')
 
+@app.route('/base')
+def base():
+    return render_template('base.html')
+
+@app.route('/createWorkspaceModal')
+def createWorkspaceModal():
+    return render_template('createWorkspaceModal.html')
+
 @app.route('/toolbar')
 def createWorkspaceProduct():
     return render_template('toolbar.html')
+
+@app.route('/termsandcondition')
+def termasAndConditions():
+    return render_template('termsandconditionmodal.html')
 
 
 if __name__ == '__main__':

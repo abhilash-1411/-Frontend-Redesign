@@ -165,8 +165,6 @@ h1 {
 
 /* style guide */
 
-
-/*  */
 .producteditbutton {
   border: 1px solid #9A9A9A;
   padding: 5px;
@@ -183,7 +181,7 @@ h1 {
 }
 
 .selct-container {
-  background-image: url('../static/Frame_bg.png');
+  background-image: url('../img/Frame_bg.png');
   width: 100%;
   height: 350px;
   background-size: cover;
@@ -228,12 +226,10 @@ h1 {
   box-shadow: 0px 2px 5px 0px #00000026;
 }
 
-/* ---------------------------------- */
-
 /* footer css */
 
 .footer {
-  background-image: url('../static/Footer-bg.png');
+  background-image: url('../img/Footer-bg.png');
   width: 100%;
 
   background-size: cover;
@@ -277,3 +273,5 @@ h1 {
 }
 
 /* footer css */
+
+/* ---------------------------------- */

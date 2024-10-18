@@ -28,11 +28,13 @@ def base():
 def createWorkspaceModal():
     return render_template('createWorkspaceModal.html')
 
-
-
 @app.route('/toolbar')
 def createWorkspaceProduct():
     return render_template('toolbar.html')
+
+@app.route('/termsandcondition')
+def termasAndConditions():
+    return render_template('termsandconditionmodal.html')
 
 
 if __name__ == '__main__':

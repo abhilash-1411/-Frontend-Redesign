@@ -36,6 +36,11 @@ def createWorkspaceProduct():
 def termasAndConditions():
     return render_template('termsandconditionmodal.html')
 
+@app.route('/workspaceProducts')
+def workspaceProducts():
+    return render_template('workspaceProducts.html')
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

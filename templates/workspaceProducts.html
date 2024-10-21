@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -21,8 +22,32 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
 
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="create-workspace-Products card text-center ">
+                    <h2 class="fs-47 fw-7 test theme-text-green">+</h2>
+                    <span class="fs-47 fw-7 test theme-text-green lh-44">Create<br>WorkSpace</span>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card workspace-Product-card w-100" style="width: 18rem; position: relative;">
+                    <img class="cover w-100 h-100"
+                        src="{{ url_for('static', filename='img/Recycled-content-Banner.jpg') }}">
+                    <div class="backdrop-content">A Project that covers all LCA and EPD Reporting for our Chicago
+                        Facility</div>
+                    <div class="workspace-Product-body p-0">
+                        <h5 class="card-title m-0 products-name">CA-2019</h5>
+                        <button href="#" class="btn product-buttom">Product</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
 </body>
 
 </html>

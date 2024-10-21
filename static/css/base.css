@@ -11,6 +11,33 @@ p {
   font-family: Neue Haas Unica;
 }
 
+.overflow-x{
+overflow-x: auto;
+}
+
+.white-space-nowrap{
+  white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 /* font-weight */
 .fw-4 {
   font-weight: 400;
@@ -73,9 +100,8 @@ h1 {
   border-radius: 6px;
 }
 
-.mx-20 {
+.ml-20 {
   margin-left: 10px;
-  margin-right: 10px;
 }
 
 .theme-text {
@@ -357,5 +383,4 @@ h1 {
   align-items: end;
   height: 145px;
 }
-
 /* work-space Product */

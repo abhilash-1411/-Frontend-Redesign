@@ -4,14 +4,12 @@
   margin: 0;
 }
 
-/* style guide */
 p {
   font-size: 16px;
   font-weight: 400;
   font-family: Neue Haas Unica;
 }
 
-/* font-weight */
 .fw-4 {
   font-weight: 400;
 }
@@ -26,32 +24,6 @@ p {
 
 .fw-7 {
   font-weight: 700;
-}
-
-/* font-size */
-.fs-16 {
-  font-size: 16px;
-}
-
-.fs-24 {
-  font-size: 24px;
-}
-
-.fs-34 {
-  font-size: 34px;
-}
-
-.fs-42 {
-  font-size: 42px;
-}
-
-.fs-47 {
-  font-size: 47px;
-}
-
-/* line-height */
-.lh-44 {
-  line-height: 44px;
 }
 
 h1 {
@@ -105,14 +77,6 @@ h1 {
 object-fit: cover;
 }
 
-.w-100 {
-  width: 100% !important;
-}
-
-.h-100 {
-  height: 100%;
-}
-
 .label {
   font-family: Neue Haas Unica;
   font-size: 16px;
@@ -159,7 +123,6 @@ object-fit: cover;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  color: white;
   text-align: left;
   box-shadow: 0px 1px 2px 0px #00000033;
   background: #78A240;
@@ -181,6 +144,7 @@ object-fit: cover;
   font-family: Neue Haas Unica;
   font-size: 16px;
   font-weight: 400;
+  width: 290px;
   line-height: 30px;
   text-align: left;
 }
@@ -202,7 +166,56 @@ object-fit: cover;
   text-align: right;
 }
 
-/* style guide */
+/* ----------------------------------  
+        FOOTER  
+---------------------------------- */
+
+.footer {
+ 
+  background: radial-gradient(100% 100% at 0% 45.1%, #FFFFFF 1.5%, rgb(163 188 129 / 20%) 24.14%, rgb(255 255 255 / 15%) 120%);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 45px 0;
+
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 23px;
+}
+
+.footer p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.footer .social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.footer-bottom {
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  border-top: 1px solid #444444;
+  padding-top: 40px;
+  font-size: 12px;
+  text-align: center;
+}
+
 
 
 .create-workspace-Products {

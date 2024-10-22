@@ -40,6 +40,10 @@ def termasAndConditions():
 def workspaceProducts():
     return render_template('workspaceProducts.html')
 
+@app.route('/datasetup')
+def dataSetup():
+    return render_template('datasetup.html')
+
 
 
 if __name__ == '__main__':

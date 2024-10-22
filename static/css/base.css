@@ -11,12 +11,15 @@ p {
   font-family: Neue Haas Unica;
 }
 
-.overflow-x{
-overflow-x: auto;
+.overflow-x {
+  overflow-x: auto;
 }
 
-.white-space-nowrap{
+.white-space-nowrap {
   white-space: nowrap;
+}
+.W-95{
+width: 95%;
 }
 
 ::-webkit-scrollbar {
@@ -25,17 +28,17 @@ overflow-x: auto;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 /* font-weight */
@@ -109,7 +112,11 @@ h1 {
 }
 
 .light-bg-blue {
-  background-color: #FAFBFE;
+  background-color: #f7f9ff;
+}
+
+.w-30{
+  width: 30px;
 }
 
 .cursor-pointer {
@@ -186,6 +193,9 @@ h1 {
   text-align: left;
   box-shadow: 0px 1px 2px 0px #00000033;
   background: #78A240;
+}
+.dfsdfdfsdf {
+  color: red !important;
 }
 
 .accordion-heading {
@@ -302,12 +312,48 @@ h1 {
   border-radius: 30px;
   box-shadow: 0px 2px 5px 0px #00000026;
 }
+
+.toolbar-shad{
+  background-image: linear-gradient(to right, #ffffff00, #ffffff); width: 100px;
+  height: 52px;
+  position: absolute;
+  right: 33px;
+  z-index: 999;
+  top: 4px;
+}
+.scroll-btn-right{
+  background: #bdd997;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  position: absolute;
+  right: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 8px 4px;
+  z-index: 999;
+}
+.scroll-btn-left{
+  background: #bdd997;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  position: absolute;
+  cursor: pointer;
+  left: -20px;
+  border-radius: 20px;
+  padding: 8px 4px;
+  z-index: 999;
+}
+
 /* select workspace*/
 
 
 /* footer css */
 .footer {
-   
+
   background: radial-gradient(100% 100% at 0% 45.1%, #FFFFFF 1.5%, rgb(163 188 129 / 20%) 24.14%, rgb(255 255 255 / 15%) 120%);
   width: 100%;
   background-size: cover;
@@ -351,6 +397,7 @@ h1 {
   font-size: 12px;
   text-align: center;
 }
+
 /* footer css */
 
 /* work-space Product */
@@ -383,4 +430,5 @@ h1 {
   align-items: end;
   height: 145px;
 }
+
 /* work-space Product */

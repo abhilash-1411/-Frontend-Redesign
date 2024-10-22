@@ -24,10 +24,23 @@
 </head>
 
 <body>
+
+
   <div class="theme-container">
     <div class="row">
-      <div class="col-lg-9">
-        <div class="light-bg-blue rounded-3 py-3 border-theme-radius overflow-x white-space-nowrap">
+      <div class="col-lg-9 position-relative">
+        <span class="toolbar-shad"></span>
+
+        <!-- Buttons for scrolling -->
+        <span class="scroll-btn-left">
+          <img src="{{ url_for('static', filename='img/angle-small-left.svg') }}" class="px-1 w-30">
+        </span>
+        <span class="scroll-btn-right">
+          <img src="{{ url_for('static', filename='img/angle-small-right.svg') }}" class="px-1 w-30">
+        </span>
+
+        <div class="light-bg-blue rounded-3 py-3 border-theme-radius overflow-x-auto W-95 pr-5 white-space-nowrap"
+          id="scrollableDiv" style="max-width: 100%; overflow-x: auto;">
           <span class="cursor-pointer bg-white p-2 my-2 box-shaddow-theme border-theme-radius ml-20">Workspace</span>
           <span
             class="cursor-pointer bg-white p-2 pr-5 my-2 box-shaddow-theme border-theme-radius ml-20 position-relative">Manage
@@ -48,12 +61,35 @@
             Configuration</span>
         </div>
       </div>
+
       <div class="col-lg-3 d-flex align-items-center border-theme-left">
         <Span class="producteditbutton">Edit Company Information</Span>
       </div>
     </div>
   </div>
 
+  <script>
+    function scrollContent(direction) {
+      var scrollableDiv = document.getElementById('scrollableDiv');
+      var scrollAmount = 200; // Adjust the scroll distance as needed
+
+      if (direction === 'left') {
+        scrollableDiv.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      } else if (direction === 'right') {
+        scrollableDiv.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+
+    // Event listeners for both buttons
+    document.querySelector('.scroll-btn-left').addEventListener('click', function () {
+      scrollContent('left');
+    });
+
+    document.querySelector('.scroll-btn-right').addEventListener('click', function () {
+      scrollContent('right');
+    });
+
+  </script>
 </body>
 
 </html>

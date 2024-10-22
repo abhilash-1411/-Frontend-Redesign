@@ -25,17 +25,16 @@
 
 <body>
 
-
   <div class="theme-container">
     <div class="row">
       <div class="col-lg-9 position-relative">
         <span class="toolbar-shad"></span>
 
         <!-- Buttons for scrolling -->
-        <span class="scroll-btn-left">
+        <span class="scroll-btn-left" style="display: none;">
           <img src="{{ url_for('static', filename='img/angle-small-left.svg') }}" class="px-1 w-30">
         </span>
-        <span class="scroll-btn-right">
+        <span class="scroll-btn-right" style="display: none;">
           <img src="{{ url_for('static', filename='img/angle-small-right.svg') }}" class="px-1 w-30">
         </span>
 
@@ -67,27 +66,48 @@
       </div>
     </div>
   </div>
-
   <script>
-    function scrollContent(direction) {
-      var scrollableDiv = document.getElementById('scrollableDiv');
-      var scrollAmount = 200; // Adjust the scroll distance as needed
+    const scrollContent = (direction) => {
+      const scrollableDiv = document.getElementById('scrollableDiv');
+      scrollableDiv.scrollBy({
+        left: direction === 'left' ? -200 : 200, // Adjust scroll distance 
+        behavior: 'smooth'
+      });
+    };
 
-      if (direction === 'left') {
-        scrollableDiv.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-      } else if (direction === 'right') {
-        scrollableDiv.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-      }
-    }
+    const checkScrollVisibility = () => {
+      const scrollableDiv = document.getElementById('scrollableDiv');
+      const scrollLeftBtn = document.querySelector('.scroll-btn-left');
+      const scrollRightBtn = document.querySelector('.scroll-btn-right');
+      const { scrollLeft, scrollWidth, clientWidth } = scrollableDiv;
 
-    // Event listeners for both buttons
-    document.querySelector('.scroll-btn-left').addEventListener('click', function () {
-      scrollContent('left');
+      const isScrollable = scrollWidth > clientWidth;
+      scrollLeftBtn.style.display = (isScrollable && scrollLeft > 0) ? 'inline-block' : 'none';
+      scrollRightBtn.style.display = (isScrollable && scrollLeft + clientWidth < scrollWidth) ? 'inline-block' : 'none';
+    };
+
+    // Debounce utility
+    const debounce = (fn, delay) => {
+      let timeout;
+      return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => fn(...args), delay);
+      };
+    };
+
+    // Scroll event listeners
+    ['.scroll-btn-left', '.scroll-btn-right'].forEach((selector, idx) => {
+      document.querySelector(selector).addEventListener('click', () => {
+        scrollContent(idx === 0 ? 'left' : 'right');
+        checkScrollVisibility();
+      });
     });
 
-    document.querySelector('.scroll-btn-right').addEventListener('click', function () {
-      scrollContent('right');
-    });
+    // Initial check and event listeners
+    window.addEventListener('load', checkScrollVisibility);
+    document.getElementById('scrollableDiv').addEventListener('scroll', debounce(checkScrollVisibility, 100));
+    window.addEventListener('resize', debounce(checkScrollVisibility, 100));
+
 
   </script>
 </body>

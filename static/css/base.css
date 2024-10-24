@@ -384,3 +384,74 @@ h1 {
   height: 145px;
 }
 /* work-space Product */
+
+
+/* Supplier table */
+
+.supplier-btn1{
+  border: 2px solid #78A240;
+  border-radius: 5px;
+}
+.supplier-btn2{
+  background-color:#78A240;
+  border-radius: 5px;
+
+  color: white;
+}
+
+.supplier-table-head{
+  background-color:#d2ecb0;
+  color: gray;
+  font-weight: 400;
+  white-space:nowrap;
+}
+
+table {
+  table-layout: fixed; /* Set table layout to fixed */
+  border-spacing: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+td{
+  white-space: nowrap;
+  font-size: 13px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+th{
+  font-weight: 400;
+  width:50px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+#header-index{
+  width: 5px;
+}
+#header-country{
+  width: 10px;
+}
+.icon{
+  width: 20px; height: 20px;
+}
+
+.city-col {
+  display: flex;                /* Use flexbox */
+  justify-content: center;      /* Center horizontally */
+  align-items: center;          /* Center vertically */
+  height: 100%; 
+  border-radius: 5px;                /* Ensure the div takes full height of the td */
+  background-color: #d2ecb0;   /* Optional: Set a background color */
+}
+.state-col {
+  display: flex;                /* Use flexbox */
+  justify-content: center;      /* Center horizontally */
+  align-items: center;  
+  text-align: center;        /* Center vertically */
+  height: 100%;             
+  border-radius: 5px;                /* Ensure the div takes full height of the td */
+  background-color: gainsboro;   /* Optional: Set a background color */
+}
+
+.inp::placeholder{
+  margin: 20px;
+}

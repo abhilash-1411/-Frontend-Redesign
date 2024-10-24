@@ -44,6 +44,10 @@ def workspaceProducts():
 def dataSetup():
     return render_template('datasetup.html')
 
+@app.route('/homepage')
+def homepage():
+    return render_template('homepage.html')
+
 
 
 if __name__ == '__main__':

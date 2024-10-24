@@ -252,20 +252,6 @@ h1 {
   border-radius: 10px;
 }
 
-.producteditbutton {
-  border: 1px solid #9A9A9A;
-  padding: 5px;
-  border-radius: 30px;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-}
-
-.toolbaar-arrow {
-  right: 9px;
-  top: 15px;
-  position: absolute;
-}
 
 .selct-container {
   background-image: url('../img/Frame_bg.png');
@@ -312,6 +298,25 @@ h1 {
   border-radius: 30px;
   box-shadow: 0px 2px 5px 0px #00000026;
 }
+/* select workspace*/
+
+
+ /****** Toolbar  *******/
+
+ .producteditbutton {
+  border: 1px solid #9A9A9A;
+  padding: 5px;
+  border-radius: 30px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.toolbaar-arrow {
+  right: 9px;
+  top: 15px;
+  position: absolute;
+}
 
 .toolbar-shad{
   background-image: linear-gradient(to right, #ffffff00, #ffffff); width: 100px;
@@ -348,7 +353,8 @@ h1 {
   z-index: 999;
 }
 
-/* select workspace*/
+/* Toolbar  */
+
 
 
 /* footer css */

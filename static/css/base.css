@@ -70,6 +70,9 @@ width: 95%;
 .fs-34 {
   font-size: 34px;
 }
+.fs-18{
+  font-size: 18px;
+}
 
 .fs-42 {
   font-size: 42px;
@@ -99,6 +102,16 @@ h1 {
   height: 50px !important;
 }
 
+.text-end{
+  text-align: end;
+}
+
+.border-radius-45 {
+  border-radius: 45px;
+}
+.border-20 {
+  border: 20px solid white;
+}
 .border-theme-radius {
   border-radius: 6px;
 }

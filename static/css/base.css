@@ -24,21 +24,25 @@ width: 95%;
 
 ::-webkit-scrollbar {
   height: 2px;
+  display: none;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+  display: none;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
+  display: none;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+  display: none;
 }
 
 /* font-weight */
@@ -335,11 +339,11 @@ h1 {
   top: 4px;
 }
 .scroll-btn-right{
-  background: #bdd997;
+  background: #f6f7f6;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 10px;
+  bottom: 7px;
   position: absolute;
   right: 20px;
   border-radius: 20px;
@@ -348,14 +352,14 @@ h1 {
   z-index: 999;
 }
 .scroll-btn-left{
-  background: #bdd997;
+  background: #f6f7f6;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 10px;
+  bottom: 7px;
   position: absolute;
   cursor: pointer;
-  left: -20px;
+  left: -30px;
   border-radius: 20px;
   padding: 8px 4px;
   z-index: 999;

@@ -16,7 +16,7 @@
                     <img src="../static/img/calendar.png" alt="" class="img-fluid icon">
                 </button>
                 <div class="input-group mx-3 ">
-                    <button class="btn border border-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">     
+                    <button class="btn border border-secondary-subtle dropdown-toggle px-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">     
                         All
                     </button>
                     <ul class="dropdown-menu">
@@ -26,8 +26,10 @@
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Separated link</a></li>
                     </ul>
-                    
-                    <input type="text" class="inp" aria-label="Text input with dropdown button" placeholder="Search">
+                    <div class="d-flex search-box">
+                      <span class="py-2 px-2"><img src="../static/img/search-interface-symbol.png" alt="" class="icon"></span>
+                        <input type="text" class="inp py-2" aria-label="Text input with dropdown button" placeholder="Search">
+                      </div>
                 </div>
             </div>
                 <div class="d-flex justify-content-between ">
@@ -39,6 +41,7 @@
         <table class="table my-3">
             <thead class="supplier-table-head">
               <tr>
+                <th id="header-index"></th>                     <!-- 1st child -->
                 <th id="header-index">#</th>                     <!-- 1st child -->
                 <th id="header-workspace">Workspace <img src="../static/img/sort.png" class="icon" alt=""></th>         <!-- 2nd child -->
                 <th id="header-description">Description</th>     <!-- 3rd child -->
@@ -54,7 +57,8 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
+                <th ><span class="rounded-4"><img src="../static/img/right.png" class="icon border border-secondary-subtle rounded-circle" alt=""></th> </span></th>
+                <th>1</th>
                 <td>Mark</td>
                 <td></td>
                 <td></td>
@@ -67,6 +71,7 @@
                 <td>09/12/2024</td>
               </tr>
               <tr>
+                <th ><span class="rounded-4"><img src="../static/img/right.png" class="icon border border-secondary-subtle rounded-circle" alt=""></th> </span></th>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td></td>
@@ -80,7 +85,8 @@
                 <td></td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th ><span class="rounded-4"><img src="../static/img/right.png" class="icon border border-secondary-subtle rounded-circle" alt=""></th> </span></th>
+                <th scope="row">3</th>
                 <td>Jacob</td>
                 <td></td>
                 <td></td>
@@ -89,6 +95,34 @@
                 <td>@mdo</td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th ><span class="rounded-4"><img src="../static/img/right.png" class="icon border border-secondary-subtle rounded-circle" alt=""></th> </span></th>
+                <th scope="row">4</th>
+                <td>Jacob</td>
+                <td></td>
+                <td></td>
+                <td ><div class="city-col ">Chicago</div></td>
+                <td></td>
+                <td>@mdo</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th ><span class="rounded-4"><img src="../static/img/right.png" class="icon border border-secondary-subtle rounded-circle" alt=""></th> </span></th>
+                <th scope="row">5</th>
+                <td>Jacob</td>
+                <td></td>
+                <td></td>
+                <td ><div class="city-col ">Chicago</div></td>
+                <td></td>
+                <td>@mdo</td>
+                <td></td>
+                <td>-</td>
                 <td></td>
                 <td></td>
               </tr>

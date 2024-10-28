@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-md-4 text-end">
         <div class="">
-          <img class="object-fit-cover border-radius-45 border-20"
+          <img class="object-fit-cover border-radius-45 border-20 w-100"
             src="{{ url_for('static', filename='img/Extruders-Counci.png') }}">
         </div>
       </div>
@@ -20,74 +20,112 @@
   </div>
 </div>
 <div class="container-fluid">
-  <div class="d-flex justify-content-between">
+  <div class="d-flex justify-content-between" style="margin: 30px 30px;">
     <div class="d-flex align-items-center">
       <div class="d-flex align-items-center">
-        <img src="{{ url_for('static', filename='img/angle-small-left.svg') }}" class="px-1 w-30">
+        <img src="{{ url_for('static', filename='img/angle-small-left.svg') }}" class=" w-20">
         <span>Back</span>
       </div>
       <h2 class="ml-5 mb-0">Data Setup</h2>
     </div>
-    <div class="">
-      <Button class="product-buttom px-3 py-2 border-0 border-radius-45">Download template</Button>
-      <Button class="">Edit</Button>
+    <div class="d-flex align-items-center">
+      <!-- <Button class="product-buttom px-3 py-2 border-0 border-radius-45">Download template</Button> -->
+      <Button class="producteditbutton bg-white d-flex align-items-center px-3"> <img
+          src="{{ url_for('static', filename='img/editicons.svg') }}" class="px-1">Edit</Button>
     </div>
   </div>
 </div>
-<!-- <div class="accordion" id="accordionExample">
+
+<div class="container-fluid px-5 my-5">
+  <!-- Example of an accordion item -->
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-        aria-expanded="true" aria-controls="collapseOne">
-        Products
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-      data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds
-        the appropriate classes that we use to style each element. These classes control the overall appearance, as well
-        as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
-        default variables. It's also worth noting that just about any HTML can go within the
-        <code>.accordion-body</code>, though the transition does limit overflow.
+    <div class="accordion-header">
+      <div class="header-content">
+        <span class="step-label">Step 1</span>
+        <h2 class="ml-5">Supplier</h2>
       </div>
+      <div class="icon-container">
+        <img class="" src="{{ url_for('static', filename='img/Products.svg') }}">
+        <img src="{{ url_for('static', filename='img/accordiondarkarrow.svg') }}" class="accordion-arrow-dark"
+          alt="Dark Arrow">
+        <img src="{{ url_for('static', filename='img/accordionarrow.svg') }}" class="accordion-arrow-white"
+          alt="White Arrow">
+      </div>
+    </div>
+    <div class="accordion-body">
+      <p style="color: #929292;" class="m-0 p-3">In this section, there are several sub-steps where you will specify
+        various derivative activities that tie into your product and process requirements in terms of raw material
+        inputs and suppliers, freight transportation modes, process inputs and end-of-life treatmen activities. These
+        derivative activities will be selected in subsequent steps when you define your products and manufacturing
+        Process Stages.</p>
+      <Button class="datasetup-button">View Products
+        <img style=" background-color: white; border-radius: 50px; padding: 8px;     width: 40px;
+    height: 40px; margin-left: 10px;" src="{{ url_for('static', filename='img/accordiondarkarrow.svg') }}">
+      </Button>
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-        aria-expanded="false" aria-controls="collapseTwo">
-        Reports
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-      data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
-        adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
-        well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
-        default variables. It's also worth noting that just about any HTML can go within the
-        <code>.accordion-body</code>, though the transition does limit overflow.
+    <div class="accordion-header">
+      <div class="header-content">
+        <span class="step-label">Step 2</span>
+        <h2 class="ml-5">Reports</h2>
       </div>
+      <div class="icon-container">
+        <img class="" src="{{ url_for('static', filename='img/Reports.svg') }}">
+        <img src="{{ url_for('static', filename='img/accordiondarkarrow.svg') }}" class="accordion-arrow-dark"
+          alt="Dark Arrow">
+        <img src="{{ url_for('static', filename='img/accordionarrow.svg') }}" class="accordion-arrow-white"
+          alt="White Arrow">
+      </div>
+    </div>
+    <div class="accordion-body">
+      <p>In this section, you will specify various derivative activities that tie into your product and process
+        requirements...</p>
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-        aria-expanded="false" aria-controls="collapseThree">
-        Scenarios
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-      data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-        adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
-        well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
-        default variables. It's also worth noting that just about any HTML can go within the
-        <code>.accordion-body</code>, though the transition does limit overflow.
+    <div class="accordion-header">
+      <div class="header-content">
+        <span class="step-label">Step 3</span>
+        <h2 class="ml-5">Scenarios</h2>
+      </div>
+      <div class="icon-container">
+        <img class="" src="{{ url_for('static', filename='img/Scenarios.svg') }}">
+        <img src="{{ url_for('static', filename='img/accordiondarkarrow.svg') }}" class="accordion-arrow-dark"
+          alt="Dark Arrow">
+        <img src="{{ url_for('static', filename='img/accordionarrow.svg') }}" class="accordion-arrow-white"
+          alt="White Arrow">
       </div>
     </div>
+    <div class="accordion-body">
+      <p>In this section, you will specify various derivative activities that tie into your product and process
+        requirements...</p>
+    </div>
   </div>
-</div> -->
+</div>
+<script>
+  document.querySelectorAll('.accordion-header').forEach((header) => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      const body = item.querySelector('.accordion-body');
+
+      // Close all other accordion items
+      document.querySelectorAll('.accordion-item').forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active'); // Remove active class from other items
+          otherItem.querySelector('.accordion-body').style.maxHeight = 0; // Set max-height to 0 for others
+        }
+      });
+
+      // Toggle the active class on the clicked accordion item
+      item.classList.toggle('active');
+
+      if (item.classList.contains('active')) {
+        body.style.maxHeight = body.scrollHeight + "px"; // Set max-height to current item's scrollHeight
+      } else {
+        body.style.maxHeight = 0; // Set max-height to 0 to close the item
+      }
+    });
+  });
+</script>
 {%endblock%}

@@ -256,19 +256,6 @@ h1 {
 
 
 /* select workspace*/
-.create-workspace-Products {
-  background-image: repeating-linear-gradient(6deg, #78A240, #78A240 9px, transparent 9px, transparent 13px, #78A240 13px), repeating-linear-gradient(96deg, #78A240, #78A240 9px, transparent 9px, transparent 13px, #78A240 13px), repeating-linear-gradient(186deg, #78A240, #78A240 9px, transparent 9px, transparent 13px, #78A240 13px), repeating-linear-gradient(276deg, #78A240, #78A240 9px, transparent 9px, transparent 13px, #78A240 13px);
-  background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
-  background-position: 0 0, 0 0, 100% 0, 0 100%;
-  background-repeat: no-repeat;
-  height: 100%;
-  display: flex;
-  height: 400px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-
 
 .selct-container {
   background-image: url('../img/Frame_bg.png');
@@ -424,6 +411,19 @@ h1 {
 /* footer css */
 
 /* work-space Product */
+
+.create-workspace-Products {
+  background-image: repeating-linear-gradient(6deg, #78A240, #78A240 9px, transparent 9px, transparent 13px, #78A240 13px), repeating-linear-gradient(96deg, #78A240, #78A240 9px, transparent 9px, transparent 13px, #78A240 13px), repeating-linear-gradient(186deg, #78A240, #78A240 9px, transparent 9px, transparent 13px, #78A240 13px), repeating-linear-gradient(276deg, #78A240, #78A240 9px, transparent 9px, transparent 13px, #78A240 13px);
+  background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
 
 .workspace-Product-card {
   width: 100%;
